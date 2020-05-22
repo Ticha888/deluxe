@@ -1,0 +1,142 @@
+@media (max-width:1030px)
+{ #utbe{display:none;} }
+
+.changeDescription
+{
+text-align: justify;
+margin-right: 50px;
+}
+.msf_page
+{
+text-align: justify;
+margin-right: 50px;
+}
+/* скрываем чекбоксы и блоки с содержанием hidetxt */
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dotted blue;
+    padding: 0;
+    color: blue;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    text-align: justify;
+    margin-right: 50px;
+    padding: 10px; 
+}
+
+/* hidetxt контейнер */
+.hidetxt {
+    margin: 0px;
+}
+
+.product .label.inStock, .product .label.onOrder {
+  display: none;
+}
+
+
+.row .label.inStock, .row .label.onOrder {
+  display: none;
+}
+
+#smallElementTools .label.onOrder, #smallElementTools .label.inStock{
+  display: none;
+}
+/* задаем относительное позиционирование контейнеру */
+.block
+{float: left; /*Задаем обтекание*/
+     
+position:relative;
+     margin-top: 30px;
+     margin-right: 20px;
+}
+/* Оформление скрытого элемента по умолчанию */ 
+.hidden
+{display: none;
+position: absolute;
+bottom: 130%;
+left: 0px;
+background-color: #fff;
+color: #3aaeda;
+padding: 5px;
+text-align: center;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+box-shadow: 0 1px 1px rgba(0,0,0,.16);
+font-size: 18px;}
+/* Дополнительное оформление скрытого элемента(необязательно) */
+.hover + .hidden:before
+{content: " ";
+position: absolute;
+top: 98%;
+left: 10%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+height: 0;
+width: 0;
+border: 7px solid transparent;
+border-right: 7px solid #fff;
+border-color: #fff transparent transparent transparent;
+z-index: 2;}
+/* Дополнительное оформление скрытого элемента(необязательно) */
+.hover + .hidden:after
+{content: " ";
+position: absolute;
+top: 100%;
+left: 10%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+
+border: 7px solid transparent;
+border-right: 7px solid #fff;
+border-color: rgba(0,0,0,.16) transparent transparent transparent;
+z-index: 1;}
+/* Появление скрытого элемента при наведении */
+.hover:hover + .hidden{display: block;}
+.ff-medium {
+    font-family: "robotomedium";
+}
+.zag {
+    margin: 1em 0 .6em 0;
+    font-weight: normal;
+    color: #1a1a1a;
+    font-family: 'Hammersmith One', sans-serif;
+    position: relative;
+    line-height: 40px;
+}
+.center-me {
+margin:0 auto;
+width:85%;
+height:200px;
+}
+.getcupon{
+	background-color: #5c93ed;
+	width: 104px;
+	color: white;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+	display: block;
+	padding: 15px 38px;
+	text-align: center;
+	text-decoration: none;
+}
+.getcupon:hover{
+	background-color: #2395e1;
+}
